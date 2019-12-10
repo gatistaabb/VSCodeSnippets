@@ -1,0 +1,50 @@
+{
+	// Place this file in PROJECT_FOLDER/.vscode
+	"sgclass": {
+		"scope": "cpp,c++",
+		"prefix": "sgclass",
+		"body": [
+			"#include \"$TM_FILENAME_BASE.h\"\n",
+			"using namespace vrsound::scenegraph;\n"
+		],
+		"description": "create scenegraph class"
+	},
+
+	"sgheader": {
+		"scope": "cpp,c++",
+		"prefix": "sgheader",
+		"body": [
+			"#pragma once\n",
+			"namespace vrsound {",
+			"namespace scenegraph {\n",
+			"class $TM_FILENAME_BASE",
+			"{",
+			"public:",
+			"\t$0\n",
+			"private:\n",
+			"};\n",
+			"} // namespace scenegraph",
+			"} // namespace vrsound"
+		],
+		"description": "create scenegraph header"
+	},
+
+	"sgtest": {
+		"scope": "cpp,c++",
+		"prefix": "sgtest",
+		"body": [
+			"#include <gmock/gmock.h>",
+			"#include <gtest/gtest.h>\n",
+
+			"#include \"${1:File}.h\"\n",
+
+			"using namespace vrsound::scenegraph;\n",
+
+			"TEST(${TM_FILENAME_BASE}, ${2:$TM_FILENAME_BASE})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "create scenegraph test"
+	}
+}

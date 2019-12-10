@@ -1,0 +1,13 @@
+{
+	// Place this file in %APPDATA%/Code/User/snippets
+	"TODO": {
+		"scope": "cpp,c++",
+		"prefix": "TODO",
+		"body": [
+			"/* TODO - @$1",
+			" * Description: $0",
+			" */"
+		],
+		"description": "TODO snippet"
+	}
+}
